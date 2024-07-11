@@ -1,0 +1,9 @@
+<input type="number" id="num" />
+<input type="button" value="Calc" onclick="clickBtn()" />
+<p><span class="output" id="span"></span></p>
+<script>
+function clickBtn() {
+    const num = parseFloat(document.getElementById("num").value);
+    document.getElementById("span").textContent = "Square root of " + num + " is " + Math.sqrt(num);
+}
+</script>
