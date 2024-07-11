@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<String> namelist = new ArrayList<>();
-        namelist.add("嵐");
-        namelist.add("市川");
-        namelist.add("右近");
-        namelist.add("猿弥");
-        namelist.add("尾上");
+        namelist.add("Alice");
+        namelist.add("Bob");
+        namelist.add("Caroline");
+        namelist.add("David");
+        namelist.add("Eve");
 
         // ユーザからの入力を受け取る
         Scanner scanner = new Scanner(System.in);
