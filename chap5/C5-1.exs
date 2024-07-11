@@ -1,7 +1,7 @@
 defmodule Hello do
-  def world do
-    IO.puts "Hello world!"
-  end
+    def world do
+        IO.puts "Hello world!"
+    end
 end
 
 Hello.world
