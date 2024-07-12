@@ -5,8 +5,12 @@ app.set("view engine", "ejs");
 const axios = require('axios');
 const url = 'https://www.jma.go.jp/bosai/forecast/data/overview_forecast/260000.json';
 const OpenAI = require('openai');
-const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY';  // ここに取得した API キーを記入
-const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+
+require('dotenv').config()
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+// API キーを直接記入する場合
+//const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY';  // ここに取得した API キーを記入
+//const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
 // コメント生成用プロンプト
 const prompt_for_comment ="以下の気象予報を踏まえて、ポジティブなコメントを作成してください。\n\n ## 気象予報:\n\n" 

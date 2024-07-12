@@ -6,8 +6,8 @@
 * c9-3.js: TypeScript Playground
 * c9-4.js: TypeScript Playground or node
 * c9-5.ts: TypeScript Playground
-* c9-6.ts: TypeScript Playground or node
-* c9-7.ts: TypeScript Playground or node
+* c9-6.ts: TypeScript Playground or ts-node
+* c9-7.ts: TypeScript Playground or ts-node
 * c9-8.js: TypeScript Playground or node
-* express_project: node
-* react_project: node and Chrome Canary
+* express_project: node apps.js
+* react_project: npm start (on Chrome Canary)
