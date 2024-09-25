@@ -10,4 +10,4 @@
 * c9-7.ts: TypeScript Playground or ts-node
 * c9-8.js: TypeScript Playground or node
 * express_project: node apps.js
-* react_project: npm start (on Chrome 128)
+* react_project: npm start (on Chrome 129) ※ 2024/9/25 Listing 9.5 から変更あり
