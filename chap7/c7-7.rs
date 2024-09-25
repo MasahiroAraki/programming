@@ -13,7 +13,7 @@ fn main() {
     match read_file_contents("data.csv") {
         Ok(contents) => {
             // ファイルの内容をコンソールに出力
-            println!("File contents: {}", contents);
+            println!("{}", contents);
         },
         Err(e) => {
             // エラーをコンソールに出力

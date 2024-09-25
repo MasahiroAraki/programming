@@ -2,17 +2,17 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Generate a simple dataset using NumPy
-np.random.seed(0)
-data = np.random.randn(100)
+# NumPy で0以上1未満の乱数を100個生成
+rng = np.random.default_rng()
+data = rng.random(100)
 
-# Create a DataFrame with Pandas
+# Pandas の DataFrame（列見出し 'Value' の100行1列）に変換
 df = pd.DataFrame({'Value': data})
 
-# Calculate the moving average
+# Pandas で移動平均（ウィンドウ幅5）を計算して，列として追加
 df['Moving Average'] = df['Value'].rolling(window=5).mean()
 
-# Plotting the data and the moving average using Matplotlib
+# Matplotlib で元のデータと移動平均をプロット
 plt.figure(figsize=(10, 6))
 plt.plot(df['Value'], label='Original Data')
 plt.plot(df['Moving Average'], label='Moving Average', color='red')

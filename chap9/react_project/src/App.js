@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [data, setData] = useState({
@@ -6,17 +6,6 @@ function App() {
     schedule: ""
   });
   const [advice, setAdvice] = useState('');
-  const [canCreate, setCanCreate] = useState(false);
-
-  useEffect(() => {
-    async function checkAIAvailability() {
-      if (window.ai && typeof window.ai.canCreateTextSession === 'function') {
-        const result = await window.ai.canCreateTextSession();
-        setCanCreate(result !== "no");
-      }
-    }
-    checkAIAvailability();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,16 +16,10 @@ function App() {
   };
 
   const generateAdvice = async () => {
-    if (!canCreate) {
-      console.log("Gemini Nano is not available.");
-      setAdvice("申し訳ありませんが、AIアシスタントが利用できません。");
-      return;
-    }
-
     const prompt = `今日の天気は${data.weather}で、予定は${data.schedule}です。この条件に合わせた行動のアドバイスを簡潔に教えてください。`;
 
     try {
-      const session = await window.ai.createTextSession();
+      const session = await window.ai.assistant.create();
       const result = await session.prompt(prompt);
       setAdvice(result);
     } catch (error) {
@@ -68,7 +51,7 @@ function App() {
           onChange={handleChange}
         />
       </div>
-      <button onClick={generateAdvice} disabled={!canCreate}>
+      <button onClick={generateAdvice}>
         アドバイスを生成
       </button>
       <h2>アドバイス:</h2>
