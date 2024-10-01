@@ -1,5 +1,7 @@
 # プログラミング〈新〉作法 　～これからプログラムを書く人のために～ サポートページ
 
+<img src="https://www.kspub.co.jp/book/detail/images/9784065369814.jpg" width="200pt"/>
+
 ## 概要と目次
 * [出版社のページ](https://www.kspub.co.jp/book/detail/5369814.html)
 
