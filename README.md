@@ -12,4 +12,4 @@
 * [7章 Rust: 安全性の追求](chap7)
 * [8章 Python: スクリプト言語からエコシステムへ](chap8)
 * [9章 JavaScript: Web アプリケーション開発](chap9)
-  * 2024/9/25 Listing 9.5 に変更あり
+  * 2024/10/12 Listing 9.5 に変更あり
