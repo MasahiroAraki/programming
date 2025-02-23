@@ -47,9 +47,7 @@ int main(void)
     // メモリの解放
     Student *tmp;
     while (head != NULL) {
-        tmp = head;
-        head = head->next;
-        free(tmp);
+        tmp = head; head = head->next; free(tmp);
     }
 
     return 0;

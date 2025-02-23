@@ -20,7 +20,6 @@ int main(void)
     for(int i=0; i<NUM; i++)
         fscanf(fp, "%d,%s", &table[i].score, table[i].name);
     fclose(fp);
-
     for (int i=0; i<NUM-1; i++)
         for (int j=NUM-1; j>i; j--)
             if (table[j-1].score < table[j].score) {
@@ -28,7 +27,6 @@ int main(void)
                 table[j] = table[j-1];
                 table[j-1] = tmp;
             }
-
     for(int i=0; i<NUM; i++)
         printf("name: %-9s  score: %d\n", table[i].name, table[i].score);
     return 0;

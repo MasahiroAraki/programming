@@ -14,12 +14,8 @@ fn input_number() -> i32 {
 
 fn calculate_squareroot(x: f64) -> f64 {
     let mut rnew = x;
-    let mut diff = rnew - x / rnew;
-    while diff.abs() > 1.0E-5 {
-        let r1 = rnew;
-        let r2 = x / r1;
-        rnew = (r1 + r2) / 2.0;
-        diff = r1 - r2;
+    while (rnew - x / rnew).abs() > 1.0E-5 {
+        rnew = (rnew + x / rnew) / 2.0;
     }
     rnew
 }

@@ -15,7 +15,6 @@ int main() {
         printf("リトルエンディアン\n"); 
     } 
     // 個々のバイトにアクセス
-    printf("バイト値: 0x%02X 0x%02X 0x%02X 0x%02X\n", 
-        value.bytes[0], value.bytes[1], value.bytes[2], value.bytes[3]);
+    printf("バイト値: 0x%02X 0x%02X 0x%02X 0x%02X\n", value.bytes[0], value.bytes[1], value.bytes[2], value.bytes[3]);
     return 0;
 } 

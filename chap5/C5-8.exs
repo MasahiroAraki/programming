@@ -1,4 +1,4 @@
-defmodule Filter3 do
+defmodule Filter2 do
     def main do
         char = "e"
         name_list = ["Alice", "Bob", "Caroline", "David", "Eve"]
@@ -7,4 +7,4 @@ defmodule Filter3 do
     end
 end
 
-Filter3.main
+Filter2.main
