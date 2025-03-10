@@ -4,6 +4,7 @@
 
 ## 概要と目次
 * [出版社のページ](https://www.kspub.co.jp/book/detail/5369814.html)
+* [スライドのページ](https://masahiroaraki.github.io/programming/)
 
 ## 本書に掲載しているコード
 * [2章 C言語からはじめよう](chap2)
