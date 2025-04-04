@@ -1,8 +1,3 @@
----
-layout: page
-image: https://github.com/MasahiroAraki/programming/blob/main/images/programming-book.jpg?raw=true
----
-
 ## プログラミング〈新〉作法 ～これからプログラムを書く人のために ～
 
 <a href="https://www.kspub.co.jp/book/detail/5369814.html" target="_blank">
