@@ -1,4 +1,5 @@
 ---
+layout: page
 image: https://github.com/MasahiroAraki/programming/blob/main/images/programming-book.jpg?raw=true
 ---
 
