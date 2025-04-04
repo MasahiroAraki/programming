@@ -1,4 +1,6 @@
-<meta property="og:image" content="https://github.com/MasahiroAraki/programming/blob/main/images/programming-book.jpg?raw=true" />
+---
+image: https://github.com/MasahiroAraki/programming/blob/main/images/programming-book.jpg?raw=true
+---
 
 ## プログラミング〈新〉作法 ～これからプログラムを書く人のために ～
 
