@@ -6,7 +6,7 @@ function App() {
   const [canCreate, setCanCreate] = useState(false);
 
   useEffect(() => {
-    if (window.ai?.assistant) {
+    if (window.ai?.languageModel) {
       setCanCreate(true);
     }
   }, []);
@@ -25,11 +25,11 @@ function App() {
       setAdvice("申し訳ありませんが，AIアシスタントが利用できません。");
       return;
     }
-
+    setAdvice("アドバイスを生成中...");
     const prompt = `今日の天気は${data.weather}で，予定は${data.schedule}です。この条件に合わせた行動のアドバイスを簡潔に教えてください。`;
 
     try {
-      const session = await window.ai.assistant.create();
+      const session = await window.ai.languageModel.create();
       const result = await session.prompt(prompt);
       setAdvice(result);
     } catch (error) {
