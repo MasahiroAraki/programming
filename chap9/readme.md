@@ -11,13 +11,14 @@
 * c9-2.js: TypeScript Playground or node
 * express_project: cd express_project & node apps.js
 * react_project: cd react_project & npm start
-  * 2025/4/29 Listing 9.5 から変更あり Chrome 135 で動作確認済
+  * 2025/5/7 Listing 9.5 から変更あり Chrome 136.0.7103.93 で動作確認済
   * Chrome で Gemini nano を使う準備
     * Chrome のアドレスバーから chrome://flags を開き、以下を設定した後、Chrome を再起動
       1. "Enables optimization guide on device" の値を "Enabled BypassPerfRequirement" に
       2. "Prompt API for Gemini Nano" の値を Enable に
-      3. "Text Safety Classifier" の値を "Enabled Executes safety classifier but no retraction of output" に
+      3. "Prompt API for Gemini Nano with Multimodal Input" の値を Enable に
+      4. "Text Safety Classifier" の値を "Enabled Executes safety classifier but no retraction of output" に
     * Chrome のアドレスバーから chrome://components を開き、以下の項目をクリックしてダウンロード完了後、Chrome を再起動
       * "Optimization Guide On Device Model" 
         * バージョン番号が表示されれば完了
-        * この項目が表示されない場合は、ディベロッパーツールのコンソールから `await ai.languageModel.create()` を実行
+        * この項目が表示されない場合は、ディベロッパーツールのコンソールから `await LanguageModel.create();` を実行

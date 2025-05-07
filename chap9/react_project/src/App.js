@@ -6,7 +6,7 @@ function App() {
   const [canCreate, setCanCreate] = useState(false);
 
   useEffect(() => {
-    if (window.ai?.languageModel) {
+    if (window.LanguageModel?.availability()) {
       setCanCreate(true);
     }
   }, []);
@@ -29,7 +29,7 @@ function App() {
     const prompt = `今日の天気は${data.weather}で，予定は${data.schedule}です。この条件に合わせた行動のアドバイスを簡潔に教えてください。`;
 
     try {
-      const session = await window.ai.languageModel.create();
+      const session = await window.LanguageModel.create();
       const result = await session.prompt(prompt);
       setAdvice(result);
     } catch (error) {
